@@ -29,8 +29,8 @@
 [3]: https://graphql-ruby.org/getting_started
 
 ---
-[![Ruby documentation](https://user-images.githubusercontent.com/39374459/195398366-ec275a40-0674-4e7a-8490-729ccdb06d3e.png)][1]
-[![Ruby on Rails documentation](https://user-images.githubusercontent.com/39374459/195398406-d7bde8c2-135d-4d06-b24d-435ca85651fd.png)][2]
-[![GraphQL documentation](https://user-images.githubusercontent.com/39374459/195402721-50f8631d-d671-4a32-99b8-5097c6f4eac8.png)][3]
+[![Ruby documentation](https://user-images.githubusercontent.com/39374459/195403784-3aaee637-2dbd-47a6-aeba-5f883700897d.png)][1]
+[![Ruby on Rails documentation](https://user-images.githubusercontent.com/39374459/195403841-076aef30-f9ee-410e-9c68-c3313d429c1c.png)][2]
+[![GraphQL documentation](https://user-images.githubusercontent.com/39374459/195403857-2a54050b-375b-411d-934e-720955662d76.png)][3]
 
 ---
