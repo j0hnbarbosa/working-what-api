@@ -21,5 +21,5 @@
 ### The application runs on: 
 [http://localhost:3000](http://localhost:3000)
 
-### GraphQL requests on:
+### GraphQL requests runs on:
 [http://localhost:3000/graphql](http://localhost:3000/graphql)
