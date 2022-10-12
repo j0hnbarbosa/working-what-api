@@ -1,21 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+### Install and configure `Postgres` in your machine
 
-# Install Postgres in your machine
+### Put your username and password to access your database in: 
+`/config/database.yml`
 
-# put your username and password in '/config/database.yml'
+### Create the databases: 
+``` rails db:create ```
 
+### Create the tables: 
+``` rails db:migrate ```
 
-# create the databases run: rails db:create
+#### Populate the database table with some values: 
+``` rails db:seed ```
 
-# Create the tables run: rails db:migrate
+#### Start the application: 
+``` rails server ```
 
-# Populate the database with some values run: rails db:seed
+### The application runs on: 
+[http://localhost:3000](http://localhost:3000)
 
-# start the application: rails server
-
-# Create a new graphql type rails g graphql:object Post title:String rating:Int comments:[Comment]
+### GraphQL requests on:
+[http://localhost:3000/graphql](http://localhost:3000/graphql)
