@@ -1,6 +1,6 @@
 module Mutations
   
-  class CreateActivity < BaseMutation
+  class UpdateActivity < BaseMutation
     null true
 
     # field :errors, [String], null: false
@@ -33,16 +33,18 @@ module Mutations
     def resolve(attributes:)
       # attributes = args[:attributes]
       puts "HEREEEEE=>>>>>>>>>>>>>>>>>>>>>>: #{attributes.to_h}"
-      activity = Activity.new(attributes.to_h)
+      resu = attributes.to_h
+      activity = Activity.find(resu[:id])
+      # activity.attributes = resu
 
-      if activity.save!
+      if activity.update(resu)
         # Successful creation, return the created object with no errors
         {
           activity: activity,
           errors: [],
         }
       else
-        # Failed save, return the errors to the client
+        # Failed update, return the errors to the client
         {
           activity: nil,
           errors: activity.errors.full_messages

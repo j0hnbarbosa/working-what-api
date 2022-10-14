@@ -8,25 +8,13 @@
 
 Activity.destroy_all
 
-20.times do |index|
-  next_day = 10 + index
-  next_hour = (8 + index) % 24
-
-  activity = Activity.new({
-    initial_hour: "2022-10-#{next_day} 06:32",
-    end_hour: "2022-10-10 #{next_hour}:12",
-    spent_time: "#{index}",
-    description: Faker::Book.title,
-    date_work: "2022-10-#{next_day}",
-    status: "in_progress"
-  })
-  activity.save
-
-  next_day = 10 + index + 1
+60.times do |index|
+  next_day = (10 + index + 1)  % 30 + 1
   next_hour = (8 + index + 1) % 24
+  next_minute = rand(10..59)
 
   activity = Activity.new({
-    initial_hour: "2022-10-#{next_day} 06:32",
+    initial_hour: "2022-10-#{next_day} 06:#{next_minute}",
     end_hour: "2022-10-10 #{next_hour}:12",
     spent_time: "#{index}",
     description: Faker::Book.title,
@@ -35,4 +23,19 @@ Activity.destroy_all
   })
 
   activity.save
+
+  next_day = (10 + index) % 30 + 1
+  next_hour = (8 + index) % 24
+  next_minute = rand(10..59)
+
+  activity = Activity.new({
+    initial_hour: "2022-10-#{next_day} 06:#{next_minute}",
+    end_hour: "2022-10-10 #{next_hour}:12",
+    spent_time: "#{index}",
+    description: Faker::Book.title,
+    date_work: "2022-10-#{next_day}",
+    status: "in_progress"
+  })
+  activity.save
+
 end
