@@ -19,7 +19,7 @@ Activity.destroy_all
     spent_time: "#{index}",
     description: Faker::Book.title,
     date_work: "2022-10-#{next_day}",
-    status: "in_progress"
+    status: "not_started"
   })
 
   activity.save
@@ -34,7 +34,7 @@ Activity.destroy_all
     spent_time: "#{index}",
     description: Faker::Book.title,
     date_work: "2022-10-#{next_day}",
-    status: "in_progress"
+    status: "not_started"
   })
   activity.save
 
